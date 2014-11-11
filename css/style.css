@@ -1,0 +1,304 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+hr.small {
+    max-width: 100px;
+}
+
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("https://dd86mil3sc3or.cloudfront.net/cms/wp-lop/2013/03/Terrace-at-night.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: #000;
+}
+
+
+.welcome {
+    padding: 50px 0;
+    background-color: #1c1950;
+    color:  #fff;
+    font-family: 'Bell MT', serif;
+}
+
+.lead {
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+.about h2 {
+    font-family: 'Bell MT', serif;
+}
+
+.about {
+    padding: 50px 0;
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+#tabs {
+    float:  none;
+    display:  inline-block;
+}
+
+.party {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Bell MT', serif;
+}
+
+.party-member {
+    margin-bottom: 30px;
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+.popover-bottom {
+    color: #000;
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+
+.events {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url("http://highhamptoninn.com/blog/wp-content/uploads/2013/01/Wedding-Celebration-at-High-Hampton-Inn-by-watsonstudio.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.ceremony {
+    padding: 50px 0;
+}
+
+.ceremony h2 {
+    font-family: 'Bell MT', serif;
+}
+
+div.event-item {
+    position: relative;
+	overflow: hidden;
+	width: 550px;
+	height: 370px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+span.title {
+	position: absolute;
+	background: rgba(30,30,30,0.9);
+	text-align: center;
+	height: 370px;
+	width: 550px;
+	font-size: 20px;
+	color: white;
+	font-family: Helvetica,Arial, sans-serif;
+    
+	
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	
+}
+
+div.event-item:hover img{
+    top: 0px;
+    left:  0px;
+}
+
+div.event-item:hover span{
+    top: 0px;
+    left: 0px;
+}
+
+
+
+
+.registry {
+    padding: 50px 0;
+    font-family: 'Bell MT', serif;
+}
+
+#amazon {
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+.registry .btn {
+    margin: 10px;
+}
+
+.travel {
+    padding: 50px 0;
+    font-family: 'Bell MT', serif;
+}
+
+#directions {
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.rsvp {
+     padding: 50px 0;
+    background-color: #1c1950;
+    color:  #fff;
+    font-family: 'Bell MT', serif;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #1c1950;
+    color:  #fff;
+}

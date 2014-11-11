@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>David and Mandy Wedding</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="glyphicon glyphicon-align-justify"></i></a>
+<nav id="sidebar-wrapper">
+   <ul class="sidebar-nav">
+      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="glyphicon glyphicon-align-justify"></i></a>
+      <li class="sidebar-brand">
+         <a href="#top">Our Wedding</a>
+      </li>
+      <li>
+         <a href="#top">Home</a>
+      </li>
+      <li>
+         <a href="#welcome">Welcome</a>
+      </li>
+      <li>
+         <a href="#about">The Bride and Groom</a>
+      </li>
+      <li>
+         <a href="#party">Wedding Party</a>
+      </li>
+      <li>
+         <a href="#events">Wedding Events</a>
+      </li>
+      <li>
+         <a href="#travel">Travel</a>
+      </li>
+      <li>
+         <a href="#registry">Registry</a>
+      </li>
+   </ul>
+</nav>
+
+<!--TITLE--> 
+<header id="top" class="header">
+   <div class="text-vertical-center">
+      <h1> </h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>04.26.2015</h1>
+      <a href="#welcome" class="btn btn-dark btn-lg">Welcome</a>
+   </div>
+</header>
+
+
+<!--WELCOME--> 
+<section id="welcome" class="welcome">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 text-center">
+            <h1>Welcome to our Wedding</h1>
+             <br>
+             <br>
+            <p class="lead">Here you'll find all of the information related to the event. <br>We look forward to you joining us.</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+<!--ABOUT-->
+
+<section id="about" class="about text-center">
+   <div class="container">
+      <h2 id="aboutTitle">The Bride and Groom</h2>
+      <hr class="small">
+      <div id="content">
+         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active text-center"><a href="#howWeMet" role="tab" data-toggle="tab">How We Met</a></li>
+            <li><a href="#profileUs" role="tab" data-toggle="tab">Who We Are</a></li>
+         </ul>
+         <div id="myTabContent" class="tab-content">
+            <div class="tab-pane active" id="howWeMet">
+               <p>We met at work. Late night coding sessions + a healthy dose of GChat. 
+                  We drove together during a weekend ski trip with some of our colleagues. 
+                  A ten hour round trip through the mountains. We were either going to kill each other,
+                  or fall for each other.
+               </p>
+               <br>
+               <br>
+               <img  src="Photos/sitting.jpg" alt="appian" height="400" width="500">
+            </div>
+            <div class="tab-pane" id="profileUs">
+               <p>Mandy is a 23 year old software consultant. She makes a mean cocktail, has a degree in bioengineering, and. 
+                  David is also a software consultant, 26, proud of his Texas roots. 
+                  You can find him in Crystal City on the weekends rooting for Baylor sports
+               </p>
+               <br>
+               <br>
+               <img  src="Photos/Us.jpg" alt="appian" height="400" width="300">
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript">
+         $(document).ready(function ($) {
+             $('#tabs').tab('show');
+         });
+      </script>
+   </div>
+</section>
+
+
+<!--PARTY-->
+
+<section id="party" class="party">
+   <div class="container">
+      <div class="row text-center">
+         <div class="col-lg-10 col-lg-offset-1">
+            <h2>The Wedding Party</h2>
+            <hr class="small">
+            <div class="row">
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                      <img src="Photos/katie.jpg" class="img-circle" alt="katie" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Bridesmaid" data-content="Katie is cool">Katie</button>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                      <img src="Photos/lauren.jpg" class="img-circle" alt="lauren" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Bridesmaid" data-content="Mandy met Lauren in elementary school after moving into her neighborhood.
+                            They became friends in middle school through their mutual lack of fashion and scorn for the loud kids in the back of the bus. 
+                            High school brought countless sleepovers, baking sessions and two-person dance parties. 
+                            They attended college together at the University of Maryland where Lauren studied environmental science and policy. 
+                            She now lives in Maryland and works as a customer service representative for a software consulting firm.">Lauren</button>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                     <img src="Photos/melissa.jpg" class="img-circle" alt="melissa" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Maid of Honor" data-content="Melissa and Mandy became friends while pledging their sorority together during sophomore year at
+                              the University of Maryland. They spent their college years procrastinating by painting their nails, shopping at Goodwill and
+                              watching chick flicks instead of doing their engineering homework. Melissa recently graduated with an engineering Master's
+                              degree from Cornell and now lives in Indiana designing knee implants for an orthopedics company. She always has the biggest smile,
+                              the corniest jokes and the warmest heart.">Melissa</button>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                     <img src="Photos/yelena.jpg" class="img-circle" alt="yelena" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Bridesmaid" data-content="When Mandy joined her sorority, everyone told her: 'Just wait until this girl 
+                             comes back from studying abroad, you're gonna love her!' They couldn't have been more right. Yelena and Mandy immediately
+                             bonded over their shared affection of wine and YouTube. They even went to Jamaica for spring break together junior year. 
+                             Yelena now lives in Houston working as an engineer for a petroleum company.">Yelena</button>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                   <img src="Photos/billy.jpg" class="img-circle" alt="billy" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Groomsman" data-content="Billy is Mandy's younger brother. While he and David have not known each other long, 
+                             they have enjoyed the opportunity to hang out together during the annual Hagen summer vacation to the Outer Banks. 
+                             Billy is a senior mechanical engineering major at the University of Maryland and he is involved with the Terps 
+                             Racing team.">Billy</button>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                     <img src="Photos/Emanuel.jpg" class="img-circle" alt="emanuel" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Best Man" data-content="Emanuel and David met during David's senior year of college via their involvement in student government. 
+                             They shared a mutual appreciation for existential literature, philosophy, and law. Several years later, 
+                             they now share a mutual appreciation of all things related to computers, coding, and technology. 
+                             Emanuel is a third year law student at Georgetown University and lives with his wife Larkin in Washington DC.">Emanuel</button>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                     <img src="Photos/Jonathan.jpg" class="img-circle" alt="jonathan" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Groomsman" data-content="Jonathan and David became friends during freshman year of college through Razorbacks for Christ
+                              at the University of Arkansas. Despite David transferring to finish college in Texas, they continued to stay close
+                              and hang out when possible. They share an appreciation of literature and pretentious music, and still try to get together
+                              as often as possible to to attend concerts. Jonathan lives in Oklahoma City and works as a petroleum landman.">Jonathan</button>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="party-member">
+                     <img src="Photos/Mike.jpg" class="img-circle" alt="mike" height="150px" width="150px">
+                      <br>
+                      <br>
+                     <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
+                      title="Groomsman" data-content="David and Michael met in 7th grade band when David moved to Lampasas. 
+                             They quickly became friends, sharing interests in sports, books, and video games. 
+                             They hung out throughout high school and into college. Despite evidence of their intelligence, 
+                             they have consistently demonstrated poor judgment when playing with fire. Michael currently lives in
+                             Austin, TX with his fiancee Kasha and works in enterprise-level IT sales.">Michael</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+<!--EVENTS-->
+   <aside id="events" class="events">
+   <div class="text-vertical-center">
+      <h1>Wedding Events</h1>
+   </div>
+</aside>
+<section id="ceremony" class="ceremony">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-lg-offset-1 text-center">
+            <h2>The Big Day</h2>
+            <hr class="small">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="event-item">
+                     <img class="img-events img-responsive" src="http://kristaajones.com/wp-content/uploads/2013/06/annapolis_maryland_wedding_photographer_photography_bride_baltimore_eastern_shore_stevensville_kent_island_st_michaels_dc_historic_ceresville_photo0401.jpg">
+                     	<span class="title"><br><br>The ceremony will start at 11am, 
+                             outside and behind the Ceresville Mansion. The wedding colors
+                             will be navy and yellow. 
+                        </span>
+                      </a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="event-item">
+                     <img class="img-events img-responsive" src="http://houseofredbird.com/wp-content/uploads/2009/10/reynolds-51.jpg">
+                        <span class="title"><br><br>The reception will feature a brunch theme, 
+                            breakfast cocktails (as well as wine and beer), and an omelette bar.
+                            In keeping with the theme, the traditional cake will be replaced with doughnuts!
+                            A DJ will keep the party moving until 3pm. 
+                        </span>
+                      </a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="event-text">
+                     Ceremony
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="event-text">
+                     Reception
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+<!--REGISTRY-->
+<section id="registry" class="registry">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text-center">
+            <h2>​Wedding Registry</h2>
+            <hr class="small">
+            <div id="amazon">
+               <strong><a href="http://www.amazon.com/registry/wedding/3G8VNDI2SLVV9" target="_blank">Amazon.com</a></strong>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+<!--TRAVEL-->
+<section id="travel" class="travel">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text-center">
+            <h2>​Traveling to Ceresville Mansion</h2>
+            <hr class="small">
+            </div>
+            <div id="directions" class="col-md-12 text-center">
+               <p>Distance from Area Airports to Frederick:</p>
+                <p>43 miles - Dulles International Airport</p>
+                <p>51 miles - Baltimore/ Washington International Airport</p>
+                <p>51 miles - Reagan National Airport</p>
+            </div>
+         
+      </div>
+   </div>
+</section>
+
+<section id="contact" class="map">
+   <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ceresville%20Mansion%2C%20Liberty%20Road%2C%20Frederick%2C%20MD%2C%20United%20States&key=AIzaSyD2kfUYxRTU0yjCuJh6wOklRaBN5Q4uZgU"></iframe>
+   <br />
+   <small>
+   <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+   </small>
+</section>
+
+
+<!--RSVP
+<section id="rsvp" class="rsvp">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <h2 id=>RSVP</h2>
+            <form role="form">
+               <div class="form-group">
+                  <label for="usr">Name:</label>
+                  <input type="text" class="form-control" id="usr">
+               </div>
+               <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</section> -->
+
+
+<!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>David Matthew and Mandy Hagen</strong>
+                    </h4>
+                    <p>Fairfax, Virginia</p>
+                    <br>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>

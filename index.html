@@ -7,7 +7,6 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <title>David and Mandy Wedding</title>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
       <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
@@ -33,13 +32,13 @@
                <a href="#party">Wedding Party</a>
             </li>
             <li>
-               <a href="#events">Wedding Events</a>
-            </li>
-            <li>
-               <a href="#travel">Travel</a>
+               <a href="#ceremony">Wedding Day</a>
             </li>
             <li>
                <a href="#registry">Registry</a>
+            </li>
+            <li>
+               <a href="#travel">Travel</a>
             </li>
          </ul>
       </nav>
@@ -55,7 +54,7 @@
             <br>
             <br>
             <br>
-            <h1>04.26.2015</h1>
+            <h1 id="splashText">04.26.2015</h1>
             <a href="#welcome" class="btn btn-dark btn-lg">Welcome</a>
          </div>
       </header>
@@ -66,18 +65,21 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-12 text-center">
-                  <h1>Welcome to our Wedding</h1>
+                  <h1>Welcome To Our Wedding</h1>
                   <br>
                   <br>
-                  <p class="lead">Here you'll find all of the information related to the event. <br>We look forward to you joining us.</p>
+                  <p class="lead">Here you will find all of the information related to the event. 
+                      <br>We look forward to you joining us.</p>
                </div>
             </div>
          </div>
       </section>
+
+
       <!--ABOUT-->
       <section id="about" class="about text-center">
          <div class="container">
-            <h2 id="aboutTitle">The Bride and Groom</h2>
+            <h2 id="aboutTitle">Bride and Groom</h2>
             <hr class="small">
             <div id="content">
                <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
@@ -88,7 +90,7 @@
                   <div class="tab-pane active" id="howWeMet">
                      <p>David and Mandy met at work. Late night coding sessions + a healthy 
                         dose of GChat led to occassional greetings in the hall. 
-                        They drove together during a weekend ski trip with some of our colleagues: 
+                        They drove together during a weekend ski trip with some of their colleagues: 
                         a ten hour winding trip through the mountains. 
                         They were either going to kill each other,
                         or fall for each other. Fortunately the latter occurred. 
@@ -97,7 +99,7 @@
                      </p>
                      <br>
                      <br>
-                     <img  src="Photos/sitting.jpg" alt="appian" height="400" width="500">
+                     <img  src="Photos/sitting.jpg" class="img-responsive center-block" alt="sitting">
                   </div>
                   <div class="tab-pane" id="profileUs">
                      <p>Mandy is a 23 year old software consultant. She makes 
@@ -109,7 +111,7 @@
                      </p>
                      <br>
                      <br>
-                     <img src="Photos/Engagement.jpg" alt="appian" height="400" width="525">
+                     <img src="Photos/Engagement.jpg" class="img-responsive center-block" alt="engagement">
                   </div>
                </div>
             </div>
@@ -120,6 +122,8 @@
             </script>
          </div>
       </section>
+
+
       <!--PARTY-->
       <section id="party" class="party">
          <div class="container">
@@ -137,7 +141,8 @@
                               title="Bridesmaid" data-content="Katie is David's younger sister. She and Mandy 
                                    instantly clicked when they first met in Arkansas. Since then they have made a point
                                    to talk and stay in touch as much as possible. Mandy is excited about having a sister
-                                   with whom she can get manicures and drink wine. Katie currently works as a nurse and lives
+                                   with whom she can get manicures and drink wine, and David is excited to have
+                                   his sister as a member of the wedding party. Katie currently works as a nurse and lives
                                    in Lubbock, TX where she helps deliver babies in a hospital.">Katie</button>
                         </div>
                      </div>
@@ -153,8 +158,7 @@
                                     High school brought countless sleepovers and two-person dance parties. 
                                     They attended college together at the University of Maryland 
                                     where Lauren studied environmental science and policy. 
-                                    She now lives in Maryland and works as a customer 
-                                    service rep for a software consulting firm.">Lauren</button>
+                                    She now lives in Maryland and works for a software consulting firm.">Lauren</button>
                         </div>
                      </div>
                      <div class="col-md-3 col-sm-6">
@@ -194,14 +198,14 @@
                            <br>
                            <br>
                            <button type ="button" class="btn btn-default popover-bottom" data-toggle="popover" data-placement="bottom" 
-                              title="Groomsman" data-content="Billy is Mandy's younger brother 
-                                    (read: regularly forced to play tea party). 
+                              title="Groomsman" data-content="Billy is Mandy's younger brother. 
                                     While he and David have not known each other long, 
                                     they enjoyed the opportunity to hang out together during
-                                    the annual Hagen summer vacation in the Outer Banks. 
-                                    Billy is a senior mechanical engineering major at the
-                                    University of Maryland and he is involved with the Terps 
-                                    F1 Racing program. He is considering several options to pursue 
+                                    the annual Hagen summer vacation in the Outer Banks. David and Mandy are 
+                                    thrilled to have him in the wedding.
+                                    Billy is a senior engineering major at the
+                                    University of Maryland and is involved with the Terps 
+                                    Racing program. He is considering several options to pursue 
                                     after graduation.">Billy</button>
                         </div>
                      </div>
@@ -255,50 +259,68 @@
 
 
       <!--EVENTS-->
-      <aside id="events" class="events">
+    <!--  <aside id="events" class="events">
          <div class="text-vertical-center">
-            <h1>Wedding Events</h1>
+             <h1 id="pictureText">The Big Day</h1>
          </div>
-      </aside>
+      </aside> -->
       <section id="ceremony" class="ceremony">
          <div class="container">
             <div class="row">
-               <div class="col-lg-12 col-lg-offset-1 text-center">
-                  <h2>The Big Day</h2>
+               <div class="col-md-12 text-center">
+                  <h2>April 26th</h2>
                   <hr class="small">
                   <div class="row">
                      <div class="col-md-6">
                         <div class="event-item">
-                           <img class="img-events img-responsive" src="http://kristaajones.com/wp-content/uploads/2013/06/annapolis_maryland_wedding_photographer_photography_bride_baltimore_eastern_shore_stevensville_kent_island_st_michaels_dc_historic_ceresville_photo0401.jpg">
-                           <span class="title"><br><br>The ceremony will start at 11am. 
-                           It is scheduled to take place outside and behind the Ceresville Mansion. 
-                           The wedding colors are navy and yellow. 
+                           <img class="img-events img-responsive" src="Photos/ceremony.jpg" alt="ceremony">
+                           <span class="title"><br><br>Ceremony<br><br>The ceremony will start at 11am. 
+                                It is scheduled to take place outside, behind the Ceresville Mansion. If the weather is
+                                not amenable to an outdoor ceremony, then the event will be moved inside the mansion.
+                           The wedding colors are navy and yellow.
+                               <br><br>
                            </span>
                            </a>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <div class="event-item">
-                           <img class="img-events img-responsive" src="http://houseofredbird.com/wp-content/uploads/2009/10/reynolds-51.jpg">
-                           <span class="title"><br><br>The reception will feature a brunch theme, 
-                           breakfast cocktails (as well as wine and beer), and an omelette bar.
-                           In keeping with the theme, the traditional cake will be replaced with doughnuts!
-                           A DJ will keep the party moving until 3pm. 
+                           <img class="img-events img-responsive" src="Photos/reception.jpg" alt="reception">
+                           <span class="title"><br><br>Reception<br><br>The reception will follow a cocktail hour held
+                               inside of the Ceresville Mansion. 
+                                It will feature a brunch theme, breakfast cocktails (as well as wine and beer), 
+                                full entrees and an omelette bar. In keeping with the theme, the traditional cake 
+                                will be replaced with doughnuts! A DJ will keep the party moving until 3pm.
+                               <br><br>
                            </span>
                            </a>
                         </div>
                      </div>
-                     <div class="col-md-6">
-                        <div class="event-text">
-                           Ceremony
-                        </div>
-                     </div>
-                     <div class="col-md-6">
-                        <div class="event-text">
-                           Reception
-                        </div>
-                     </div>
                   </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!--REGISTRY-->
+      <section id="registry" class="registry">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <h2>​Wedding Registry</h2>
+                  <hr class="small">
+                  <div id="amazon">
+                     <strong>
+                         <a href="http://www.amazon.com/registry/wedding/3G8VNDI2SLVV9" target="_blank">Amazon.com</a>
+                     </strong>
+                      <br>
+                      <br>
+                      <br>
+                  </div>
+                   <div id="weddingGifts">
+                        <img  src="Photos/weddingGifts.jpg" class="img-responsive center-block" alt="gifts">
+                   </div>
                </div>
             </div>
          </div>
@@ -313,12 +335,24 @@
                   <h2>​Traveling to Ceresville Mansion</h2>
                   <hr class="small">
                </div>
-               <div id="directions" class="col-md-12 text-center">
-                  <p>Distance from Area Airports to Frederick:</p>
-                  <p>43 miles - Dulles International Airport</p>
-                  <p>51 miles - Baltimore/ Washington International Airport</p>
+               <div id="directions" class="col-md-6 text-center">
+                  <p>Area Airports</p>
+                  <p>Dulles International</p>
+                  <p>Baltimore/ Washington International</p>
                   <p>51 miles - Reagan National Airport</p>
                </div>
+                <div id="hotels" class="col-md-6 text-center">
+                    <p>Hotels in Frederick</p>
+                    <p>
+                        <a href="http://hamptoninn3.hilton.com/en/hotels/maryland/hampton-inn-and-suites-frederick-fort-detrick-FDRHSHX/index.html" target="_blank">Hampton Inn</a>
+                    </p>
+                    <p>
+                        <a href="http://book.bestwestern.com/bestwestern/US/MD/Frederick-hotels/BEST-WESTERN-Historic-Frederick/Hotel-Overview.do?propertyCode=21052" target="_blank">Best Western</a>
+                    </p>
+                    <p>
+                        <a href="http://www.comfortinn.com/hotel-frederick-maryland-MD164" target="_blank">Comfort Inn</a>
+                    </p>
+                </div>
             </div>
          </div>
       </section>
@@ -330,21 +364,6 @@
          </small>
       </section>
 
-
-      <!--REGISTRY-->
-      <section id="registry" class="registry">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 text-center">
-                  <h2>​Wedding Registry</h2>
-                  <hr class="small">
-                  <div id="amazon">
-                     <strong><a href="http://www.amazon.com/registry/wedding/3G8VNDI2SLVV9" target="_blank">Amazon.com</a></strong>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
 
 
       <!--RSVP
@@ -373,8 +392,8 @@
       <footer>
          <div class="container">
             <div class="row">
-               <div class="col-lg-10 col-lg-offset-1 text-center">
-                  <h4><strong>David Matthew and Mandy Hagen</strong>
+               <div class="col-md-12 text-center">
+                  <h4>David Matthew and Mandy Hagen
                   </h4>
                   <p>Fairfax, Virginia</p>
                   <br>
@@ -384,7 +403,8 @@
             </div>
          </div>
       </footer>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/app.js"></script>
+      <script src="js/app.js"></script>
    </body>
 </html>

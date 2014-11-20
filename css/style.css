@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 .text-vertical-center {
@@ -52,6 +52,7 @@ body {
 
 hr.small {
     max-width: 100px;
+    border-color: rgba(30,30,30,0.8)
 }
 
 
@@ -149,27 +150,29 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
     background-color: #000;
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
 }
 
 
 .welcome {
     padding: 50px 0;
-    background-color: #1c1950;
+    background-color: #001A33;
     color:  #fff;
-    font-family: 'Bell MT', serif;
+    font-family: 'Bodoni MT', serif;
 }
 
 .lead {
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 .about h2 {
-    font-family: 'Bell MT', serif;
+    font-family: 'Bodoni MT', serif;
 }
 
 .about {
     padding: 50px 0;
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 #tabs {
@@ -179,19 +182,19 @@ hr.small {
 
 .party {
     padding: 50px 0;
-    background-color: #fff;
+    background-color: #F2F2EF;
     color: #000;
-    font-family: 'Bell MT', serif;
+    font-family: 'Bodoni MT', serif;
 }
 
 .party-member {
     margin-bottom: 30px;
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 .popover-bottom {
     color: #000;
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 
@@ -207,20 +210,25 @@ hr.small {
     -o-background-size: cover;
 }
 
+#pictureText {
+    font-family: Verdana, sans-serif;
+    color: rgba(255,255,255);
+    font-size:  800%; 
+}
 
 .ceremony {
     padding: 50px 0;
 }
 
 .ceremony h2 {
-    font-family: 'Bell MT', serif;
+    font-family: 'Bodoni MT', serif;
 }
 
 div.event-item {
     position: relative;
 	overflow: hidden;
-	width: 550px;
-	height: 370px;
+	width: initial;
+	height: initial;
 	display: inline-block;
 	margin-right: 15px;
 	margin-bottom: 15px;
@@ -228,13 +236,13 @@ div.event-item {
 
 span.title {
 	position: absolute;
-	background: rgba(30,30,30,0.9);
+	background: rgba(30,30,30,0.8);
 	text-align: center;
-	height: 370px;
-	width: 550px;
-	font-size: 20px;
+	height: inherit;
+	width: inherit;
+	font-size: inherit;
 	color: white;
-	font-family: Helvetica,Arial, sans-serif;
+	font-family: Verdana, sans-serif;
     
 	
 	-webkit-transition: all .3s ease-out;
@@ -255,16 +263,14 @@ div.event-item:hover span{
     left: 0px;
 }
 
-
-
-
 .registry {
     padding: 50px 0;
-    font-family: 'Bell MT', serif;
+    font-family: 'Bodoni MT', serif;
+    background-color: #F2F2EF;
 }
 
 #amazon {
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 .registry .btn {
@@ -273,11 +279,15 @@ div.event-item:hover span{
 
 .travel {
     padding: 50px 0;
-    font-family: 'Bell MT', serif;
+    font-family: 'Bodoni MT', serif;
 }
 
 #directions {
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Verdana, sans-serif;
+}
+
+#hotels {
+    font-family: Verdana, sans-serif;
 }
 
 .map {
@@ -292,13 +302,14 @@ div.event-item:hover span{
 
 .rsvp {
      padding: 50px 0;
-    background-color: #1c1950;
+    background-color: #001A33;
     color:  #fff;
-    font-family: 'Bell MT', serif;
+    font-family: 'Bodoni MT', serif;
 }
 
 footer {
     padding: 50px 0;
-    background-color: #1c1950;
+    background-color: #001A33;
     color:  #fff;
+    font-family: Verdana, sans-serif;
 }

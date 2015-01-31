@@ -1,15 +1,21 @@
 $(document).ready(function () {
         // CLOSES MENU
-        $("#menu-close").click(function (e) {
-            e.preventDefault();
+        $("#menu-close").click(function (i) {
+            i.preventDefault();
             $("#sidebar-wrapper").toggleClass("active");
         });
 
         // OPENS MENU
-       $("#menu-toggle").click(function (e) {
-            e.preventDefault();
+       $("#menu-toggle").click(function (i) {
+            i.preventDefault();
             $("#sidebar-wrapper").toggleClass("active"); 
-        }); 
+        });
+
+        //INITIALIZES POPOVER
+        $(".popover-bottom").popover({
+            placement: 'bottom'
+        });
+    });
 
       /*  // SCROLLS TO MENU SELECTION
         $(function () {
@@ -28,10 +34,12 @@ $(document).ready(function () {
             });
         }); */
 
-        //INITIALIZES POPOVER
         
-            $(".popover-bottom").popover({
-                placement: 'bottom'
-            });
-        });
+
+
+        /*    var dataBase = new Firebase("https://luminous-fire-2300.firebaseio.com/");
+            var pin = $("#pinNumber").val();
+            function displayMessage() {
+                $()
+                }); */
     

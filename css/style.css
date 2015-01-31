@@ -163,7 +163,7 @@ hr.small {
 }
 
 .lead {
-    font-family: Verdana, sans-serif;
+    font-family: 'Bodoni MT', serif;
 }
 
 .about h2 {
@@ -179,6 +179,11 @@ hr.small {
     float:  none;
     display:  inline-block;
 }
+
+#myTabContent {
+    text-align:  left;
+}
+
 
 .party {
     padding: 50px 0;
@@ -263,10 +268,33 @@ div.event-item:hover span{
     left: 0px;
 }
 
-.registry {
+.photoGallery  {
     padding: 50px 0;
     font-family: 'Bodoni MT', serif;
     background-color: #F2F2EF;
+}
+
+.carousel-inner > .item > img {
+margin: 0 auto;
+}
+
+.carousel-control {
+  top:50%;
+  width:auto;
+  height:5em;
+  background:transparent;
+  color: F2F2EF;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+  position: absolute;
+  color: #001A33; 
+  display:block;
+  width:auto;
+}
+
+.registry {
+    padding: 50px 0;
+    font-family: 'Bodoni MT', serif;
 }
 
 #amazon {
@@ -275,6 +303,16 @@ div.event-item:hover span{
 
 .registry .btn {
     margin: 10px;
+}
+
+.rsvp {
+     padding: 50px 0;
+    background-color: #F2F2EF;
+    font-family: 'Bodoni MT', serif;
+}
+
+#rsvpForm {
+    font-family: Verdana, sans-serif;
 }
 
 .travel {
@@ -298,13 +336,6 @@ div.event-item:hover span{
     .map {
         height: 75%;
     }
-}
-
-.rsvp {
-     padding: 50px 0;
-    background-color: #001A33;
-    color:  #fff;
-    font-family: 'Bodoni MT', serif;
 }
 
 footer {

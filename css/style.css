@@ -55,6 +55,10 @@ hr.small {
     border-color: rgba(30,30,30,0.8)
 }
 
+hr.small2 {
+    max-width: 100px;
+    border-color:  rgba(255,255,255,0.2);
+}
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -173,15 +177,7 @@ hr.small {
 .about {
     padding: 50px 0;
     font-family: Verdana, sans-serif;
-}
-
-#tabs {
-    float:  none;
-    display:  inline-block;
-}
-
-#myTabContent {
-    text-align:  left;
+    font-size: medium;
 }
 
 
@@ -203,76 +199,48 @@ hr.small {
 }
 
 
-.events {
-    display: table;
-    width: 100%;
+.reception {
     height: 400px;
-    color: #fff;
-    background: url("http://highhamptoninn.com/blog/wp-content/uploads/2013/01/Wedding-Celebration-at-High-Hampton-Inn-by-watsonstudio.jpg") no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+}
+
+#receptionPhoto img{
+  position: absolute;
+  top: 0;
+  left: -40%;
+  z-index: -999;
+  width:  180%;
+  height: -100%;
+}
+
+#receptionInfo {
+    background: rgba(30,30,30,0.5);
+        color: #fff;
+    font-family: Verdana, sans-serif;
+    font-size: medium;
+}
+
+#receptionHeader {
+    font-family: 'Bodoni MT', serif;
 }
 
 #pictureText {
     font-family: Verdana, sans-serif;
-    color: rgba(255,255,255);
+    color: rgba(255,255,255, 1.0);
     font-size:  800%; 
 }
 
 .ceremony {
     padding: 50px 0;
+    font-family: Verdana, sans-serif;
+    background-color: #FFFFD6;
+    font-size: medium;
 }
 
-.ceremony h2 {
+#ceremonyHeader {
     font-family: 'Bodoni MT', serif;
 }
 
-div.event-item {
-    position: relative;
-	overflow: hidden;
-	width: initial;
-	height: initial;
-	display: inline-block;
-	margin-right: 15px;
-	margin-bottom: 15px;
-}
 
-span.title {
-	position: absolute;
-	background: rgba(30,30,30,0.8);
-	text-align: center;
-	height: inherit;
-	width: inherit;
-	font-size: inherit;
-	color: white;
-	font-family: Verdana, sans-serif;
-    
-	
-	-webkit-transition: all .3s ease-out;
-	-moz-transition: all .3s ease-out;
-	-ms-transition: all .3s ease-out;
-	-o-transition: all .3s ease-out;
-	transition: all .3s ease-out;
-	
-}
-
-div.event-item:hover img{
-    top: 0px;
-    left:  0px;
-}
-
-div.event-item:hover span{
-    top: 0px;
-    left: 0px;
-}
-
-.photoGallery  {
-    padding: 50px 0;
-    font-family: 'Bodoni MT', serif;
-    background-color: #F2F2EF;
-}
 
 .carousel-inner > .item > img {
 margin: 0 auto;
@@ -283,7 +251,7 @@ margin: 0 auto;
   width:auto;
   height:5em;
   background:transparent;
-  color: F2F2EF;
+  color: #F2F2EF;
 }
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
   position: absolute;
@@ -293,12 +261,15 @@ margin: 0 auto;
 }
 
 .registry {
+    background-color: #001A33;
+    color:  #fff;
     padding: 50px 0;
     font-family: 'Bodoni MT', serif;
 }
 
 #amazon {
     font-family: Verdana, sans-serif;
+    font-size: medium;
 }
 
 .registry .btn {
@@ -306,8 +277,7 @@ margin: 0 auto;
 }
 
 .rsvp {
-     padding: 50px 0;
-    background-color: #F2F2EF;
+    padding-top: 50px;
     font-family: 'Bodoni MT', serif;
 }
 
@@ -317,15 +287,18 @@ margin: 0 auto;
 
 .travel {
     padding: 50px 0;
+    background-color: #F2F2EF;
     font-family: 'Bodoni MT', serif;
 }
 
 #directions {
     font-family: Verdana, sans-serif;
+    font-size: medium;
 }
 
 #hotels {
     font-family: Verdana, sans-serif;
+    font-size: medium;
 }
 
 .map {

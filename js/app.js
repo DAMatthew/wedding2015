@@ -1,45 +1,28 @@
-$(document).ready(function () {
-        // CLOSES MENU
-        $("#menu-close").click(function (i) {
-            i.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
+$(document).ready(function() {
 
-        // OPENS MENU
-       $("#menu-toggle").click(function (i) {
-            i.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active"); 
-        });
-
-        //INITIALIZES POPOVER
-        $(".popover-bottom").popover({
-            placement: 'bottom'
+    $("#menu-close").click(function(a) {
+        a.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    $("#menu-toggle").click(function(a) {
+        a.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    $(".popover-bottom").popover({
+        placement: "bottom"
+    });
+    $(function() {
+        $("a[href*=#]:not([href=#])").click(function() {
+            if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") || location.hostname == this.hostname) {
+                var a = $(this.hash);
+                a = a.length ? a : $("[name=" + this.hash.slice(1) + "]");
+                if (a.length) {
+                    $("html,body").animate({
+                        scrollTop: a.offset().top
+                    }, 1e3);
+                    return false;
+                }
+            }
         });
     });
-
-      /*  // SCROLLS TO MENU SELECTION
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        }); */
-
-        
-
-
-        /*    var dataBase = new Firebase("https://luminous-fire-2300.firebaseio.com/");
-            var pin = $("#pinNumber").val();
-            function displayMessage() {
-                $()
-                }); */
-    
+});
